@@ -1,0 +1,16 @@
+__pycache__/
+.idea/
+datasets/adult/
+datasets/bean/
+datasets/california
+datasets/default/
+datasets/gesture/
+datasets/letter/
+datasets/magic/
+datasets/news/
+datasets/shoppers/
+saved_models/
+*.DS_Store
+datasets/.DS_Store
+.DS_Store
+workspace/

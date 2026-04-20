@@ -1,0 +1,865 @@
+{
+  "summary": {
+    "Omega_col": 0.943736111111111,
+    "Omega_row": 0.9049682558395062,
+    "privacy_median_DCR": 1.4900502731730734,
+    "synthesis_fraction": 0.00016666666666666666,
+    "utility_mean_accuracy": 0.7928250000000001,
+    "utility_per_classifier": {
+      "RandomForest": 0.8107666666666666,
+      "DecisionTree": 0.7791333333333333,
+      "LogisticRegression": 0.7758,
+      "AdaBoost": 0.8056
+    }
+  },
+  "per_column": {
+    "BILL_AMT1": {
+      "type": "numeric",
+      "ks": 0.05540000000000006,
+      "omega_col": 0.9445999999999999
+    },
+    "BILL_AMT2": {
+      "type": "numeric",
+      "ks": 0.054933333333333334,
+      "omega_col": 0.9450666666666667
+    },
+    "BILL_AMT3": {
+      "type": "numeric",
+      "ks": 0.03290000000000004,
+      "omega_col": 0.9671
+    },
+    "BILL_AMT4": {
+      "type": "numeric",
+      "ks": 0.019766666666666655,
+      "omega_col": 0.9802333333333333
+    },
+    "BILL_AMT5": {
+      "type": "numeric",
+      "ks": 0.01920000000000005,
+      "omega_col": 0.9807999999999999
+    },
+    "BILL_AMT6": {
+      "type": "numeric",
+      "ks": 0.019666666666666666,
+      "omega_col": 0.9803333333333333
+    },
+    "PAY_AMT1": {
+      "type": "numeric",
+      "ks": 0.049833333333333396,
+      "omega_col": 0.9501666666666666
+    },
+    "PAY_AMT2": {
+      "type": "numeric",
+      "ks": 0.05146666666666666,
+      "omega_col": 0.9485333333333333
+    },
+    "PAY_AMT3": {
+      "type": "numeric",
+      "ks": 0.039966666666666706,
+      "omega_col": 0.9600333333333333
+    },
+    "PAY_AMT4": {
+      "type": "numeric",
+      "ks": 0.03639999999999999,
+      "omega_col": 0.9636
+    },
+    "PAY_AMT5": {
+      "type": "numeric",
+      "ks": 0.040833333333333305,
+      "omega_col": 0.9591666666666667
+    },
+    "PAY_AMT6": {
+      "type": "numeric",
+      "ks": 0.04466666666666666,
+      "omega_col": 0.9553333333333334
+    },
+    "LIMIT_BAL": {
+      "type": "categorical",
+      "tvd": 0.6742666666666667,
+      "omega_col": 0.6628666666666667
+    },
+    "SEX": {
+      "type": "categorical",
+      "tvd": 0.005599999999999994,
+      "omega_col": 0.9972
+    },
+    "EDUCATION": {
+      "type": "categorical",
+      "tvd": 0.03473333333333328,
+      "omega_col": 0.9826333333333334
+    },
+    "MARRIAGE": {
+      "type": "categorical",
+      "tvd": 0.025133333333333282,
+      "omega_col": 0.9874333333333334
+    },
+    "AGE": {
+      "type": "categorical",
+      "tvd": 0.7481333333333333,
+      "omega_col": 0.6259333333333333
+    },
+    "PAY_0": {
+      "type": "categorical",
+      "tvd": 0.04340000000000004,
+      "omega_col": 0.9783
+    },
+    "PAY_2": {
+      "type": "categorical",
+      "tvd": 0.04020000000000003,
+      "omega_col": 0.9799
+    },
+    "PAY_3": {
+      "type": "categorical",
+      "tvd": 0.026266666666666716,
+      "omega_col": 0.9868666666666667
+    },
+    "PAY_4": {
+      "type": "categorical",
+      "tvd": 0.0572,
+      "omega_col": 0.9714
+    },
+    "PAY_5": {
+      "type": "categorical",
+      "tvd": 0.052333333333333315,
+      "omega_col": 0.9738333333333333
+    },
+    "PAY_6": {
+      "type": "categorical",
+      "tvd": 0.05520000000000013,
+      "omega_col": 0.9723999999999999
+    },
+    "default": {
+      "type": "categorical",
+      "tvd": 0.008133333333333326,
+      "omega_col": 0.9959333333333333
+    }
+  },
+  "per_pair": {
+    "('BILL_AMT1', 'BILL_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.9514836727518163,
+      "rho_synth": 0.9582818464770729,
+      "omega_row": 0.9966009131373716
+    },
+    "('BILL_AMT1', 'BILL_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.8922785291271809,
+      "rho_synth": 0.9470809539493155,
+      "omega_row": 0.9725987875889327
+    },
+    "('BILL_AMT1', 'BILL_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.8602721890293085,
+      "rho_synth": 0.93487793881527,
+      "omega_row": 0.9626971251070192
+    },
+    "('BILL_AMT1', 'BILL_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.8297786058329928,
+      "rho_synth": 0.9202347761850078,
+      "omega_row": 0.9547719148239925
+    },
+    "('BILL_AMT1', 'BILL_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.8026501885528521,
+      "rho_synth": 0.9093786999980358,
+      "omega_row": 0.9466357442774082
+    },
+    "('BILL_AMT1', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.14027727757532438,
+      "rho_synth": 0.1806579628293673,
+      "omega_row": 0.9798096573729785
+    },
+    "('BILL_AMT1', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.09935503497276843,
+      "rho_synth": 0.22045658121141853,
+      "omega_row": 0.9394492268806749
+    },
+    "('BILL_AMT1', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.15688713847568625,
+      "rho_synth": 0.10280744762825153,
+      "omega_row": 0.9729601545762826
+    },
+    "('BILL_AMT1', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.1583025332835415,
+      "rho_synth": 0.14032806797987038,
+      "omega_row": 0.9910127673481645
+    },
+    "('BILL_AMT1', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.167025712082915,
+      "rho_synth": 0.12657571573469897,
+      "omega_row": 0.979775001825892
+    },
+    "('BILL_AMT1', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.17934112200688596,
+      "rho_synth": 0.11771807481269049,
+      "omega_row": 0.9691884764029023
+    },
+    "('BILL_AMT2', 'BILL_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.9283262592714867,
+      "rho_synth": 0.9678895651463091,
+      "omega_row": 0.9802183470625888
+    },
+    "('BILL_AMT2', 'BILL_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.8924822912577246,
+      "rho_synth": 0.957373914928747,
+      "omega_row": 0.9675541881644888
+    },
+    "('BILL_AMT2', 'BILL_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.8597783072714427,
+      "rho_synth": 0.9310306622729145,
+      "omega_row": 0.9643738224992641
+    },
+    "('BILL_AMT2', 'BILL_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.8315935591018226,
+      "rho_synth": 0.9292620816002105,
+      "omega_row": 0.9511657387508061
+    },
+    "('BILL_AMT2', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.2803653570141007,
+      "rho_synth": 0.20582942650312944,
+      "omega_row": 0.9627320347445144
+    },
+    "('BILL_AMT2', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.10085087751752836,
+      "rho_synth": 0.20604074904442493,
+      "omega_row": 0.9474050642365517
+    },
+    "('BILL_AMT2', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.1507181937016755,
+      "rho_synth": 0.10394547999481137,
+      "omega_row": 0.976613643146568
+    },
+    "('BILL_AMT2', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.14739810422001154,
+      "rho_synth": 0.13155087104130403,
+      "omega_row": 0.9920763834106463
+    },
+    "('BILL_AMT2', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.1579574116239641,
+      "rho_synth": 0.11853406361486803,
+      "omega_row": 0.980288325995452
+    },
+    "('BILL_AMT2', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.17425616563434307,
+      "rho_synth": 0.10464779215908102,
+      "omega_row": 0.965195813262369
+    },
+    "('BILL_AMT3', 'BILL_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.9239694565909823,
+      "rho_synth": 0.973769656033086,
+      "omega_row": 0.9750999002789482
+    },
+    "('BILL_AMT3', 'BILL_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.8839096973620094,
+      "rho_synth": 0.9654386050778994,
+      "omega_row": 0.959235546142055
+    },
+    "('BILL_AMT3', 'BILL_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.8533200905940505,
+      "rho_synth": 0.9522609001522226,
+      "omega_row": 0.9505295952209138
+    },
+    "('BILL_AMT3', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.24433523760815923,
+      "rho_synth": 0.17598482972196383,
+      "omega_row": 0.9658247960569023
+    },
+    "('BILL_AMT3', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.31693597717968836,
+      "rho_synth": 0.2791998232566465,
+      "omega_row": 0.9811319230384791
+    },
+    "('BILL_AMT3', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.13001118162442066,
+      "rho_synth": 0.12204272661511889,
+      "omega_row": 0.9960157724953491
+    },
+    "('BILL_AMT3', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.14340460499244467,
+      "rho_synth": 0.1338400238834765,
+      "omega_row": 0.9952177094455159
+    },
+    "('BILL_AMT3', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.1797123504064918,
+      "rho_synth": 0.129753122491135,
+      "omega_row": 0.9750203860423216
+    },
+    "('BILL_AMT3', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.1823259661520526,
+      "rho_synth": 0.10481452386976112,
+      "omega_row": 0.9612442788588542
+    },
+    "('BILL_AMT4', 'BILL_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.9401344040880047,
+      "rho_synth": 0.9614326158743371,
+      "omega_row": 0.9893508941068339
+    },
+    "('BILL_AMT4', 'BILL_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.9009409547978418,
+      "rho_synth": 0.9561596122321259,
+      "omega_row": 0.9723906712828579
+    },
+    "('BILL_AMT4', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.23301185215343584,
+      "rho_synth": 0.17961791683859962,
+      "omega_row": 0.9733030323425819
+    },
+    "('BILL_AMT4', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.20756372904207582,
+      "rho_synth": 0.2569688944144869,
+      "omega_row": 0.9752974173137945
+    },
+    "('BILL_AMT4', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.30002252911164884,
+      "rho_synth": 0.19245574598286647,
+      "omega_row": 0.9462166084356088
+    },
+    "('BILL_AMT4', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.1301914077878083,
+      "rho_synth": 0.14299937735712095,
+      "omega_row": 0.9935960152153437
+    },
+    "('BILL_AMT4', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.1604330376290049,
+      "rho_synth": 0.15367116913756904,
+      "omega_row": 0.996619065754282
+    },
+    "('BILL_AMT4', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.17763699418674445,
+      "rho_synth": 0.1144814251074837,
+      "omega_row": 0.9684222154603697
+    },
+    "('BILL_AMT5', 'BILL_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.9461968070521904,
+      "rho_synth": 0.9681610201583253,
+      "omega_row": 0.9890178934469326
+    },
+    "('BILL_AMT5', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.21703082377804805,
+      "rho_synth": 0.15957968968382386,
+      "omega_row": 0.971274432952888
+    },
+    "('BILL_AMT5', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.1812464910522764,
+      "rho_synth": 0.2638670396399626,
+      "omega_row": 0.9586897257061568
+    },
+    "('BILL_AMT5', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.25230486173062866,
+      "rho_synth": 0.13531637226114313,
+      "omega_row": 0.9415057552652573
+    },
+    "('BILL_AMT5', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.2931184631844313,
+      "rho_synth": 0.19211488789211206,
+      "omega_row": 0.9494982123538404
+    },
+    "('BILL_AMT5', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.14157417995960658,
+      "rho_synth": 0.12322394372027284,
+      "omega_row": 0.9908248818803331
+    },
+    "('BILL_AMT5', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.16418445035361692,
+      "rho_synth": 0.13143031982174236,
+      "omega_row": 0.9836229347340627
+    },
+    "('BILL_AMT6', 'PAY_AMT1')": {
+      "type": "num-num",
+      "rho_real": 0.19996500616338558,
+      "rho_synth": 0.15196393024720434,
+      "omega_row": 0.9759994620419093
+    },
+    "('BILL_AMT6', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.17266293741802885,
+      "rho_synth": 0.23821117939847195,
+      "omega_row": 0.9672258790097784
+    },
+    "('BILL_AMT6', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.2337697933269347,
+      "rho_synth": 0.1555371709564154,
+      "omega_row": 0.9608836888147403
+    },
+    "('BILL_AMT6', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.250236824933439,
+      "rho_synth": 0.13922019732287017,
+      "omega_row": 0.9444916861947156
+    },
+    "('BILL_AMT6', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.307728889501155,
+      "rho_synth": 0.2054892687124209,
+      "omega_row": 0.9488801896056329
+    },
+    "('BILL_AMT6', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.11549416685164515,
+      "rho_synth": 0.12629678516212262,
+      "omega_row": 0.9945986908447613
+    },
+    "('PAY_AMT1', 'PAY_AMT2')": {
+      "type": "num-num",
+      "rho_real": 0.2855755286868428,
+      "rho_synth": 0.32748597509773436,
+      "omega_row": 0.9790447767945543
+    },
+    "('PAY_AMT1', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.2521911389524023,
+      "rho_synth": 0.1465394376102272,
+      "omega_row": 0.9471741493289124
+    },
+    "('PAY_AMT1', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.19955793117068082,
+      "rho_synth": 0.19065045451061408,
+      "omega_row": 0.9955462616699666
+    },
+    "('PAY_AMT1', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.14845927501534328,
+      "rho_synth": 0.23615659249813667,
+      "omega_row": 0.9561513412586033
+    },
+    "('PAY_AMT1', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.18573525544572766,
+      "rho_synth": 0.1974232065115778,
+      "omega_row": 0.994156024467075
+    },
+    "('PAY_AMT2', 'PAY_AMT3')": {
+      "type": "num-num",
+      "rho_real": 0.2447704502928473,
+      "rho_synth": 0.4062848272405195,
+      "omega_row": 0.9192428115261639
+    },
+    "('PAY_AMT2', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.18010674364562398,
+      "rho_synth": 0.19706047598185072,
+      "omega_row": 0.9915231338318866
+    },
+    "('PAY_AMT2', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.1809077525941695,
+      "rho_synth": 0.2751257513249235,
+      "omega_row": 0.952891000634623
+    },
+    "('PAY_AMT2', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.15763391627233475,
+      "rho_synth": 0.13324432957102644,
+      "omega_row": 0.9878052066493459
+    },
+    "('PAY_AMT3', 'PAY_AMT4')": {
+      "type": "num-num",
+      "rho_real": 0.21632509170084335,
+      "rho_synth": 0.19335460412197852,
+      "omega_row": 0.9885147562105676
+    },
+    "('PAY_AMT3', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.15921372030871164,
+      "rho_synth": 0.39549660492523364,
+      "omega_row": 0.881858557691739
+    },
+    "('PAY_AMT3', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.16274003329183445,
+      "rho_synth": 0.20950150310228793,
+      "omega_row": 0.9766192650947733
+    },
+    "('PAY_AMT4', 'PAY_AMT5')": {
+      "type": "num-num",
+      "rho_real": 0.15183043582617867,
+      "rho_synth": 0.14892042872883385,
+      "omega_row": 0.9985449964513275
+    },
+    "('PAY_AMT4', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.1578339156013721,
+      "rho_synth": 0.32266610460328216,
+      "omega_row": 0.917583905499045
+    },
+    "('PAY_AMT5', 'PAY_AMT6')": {
+      "type": "num-num",
+      "rho_real": 0.15489552525961636,
+      "rho_synth": 0.25355904652492106,
+      "omega_row": 0.9506682393673477
+    },
+    "('LIMIT_BAL', 'SEX')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7353999999999999,
+      "omega_row": 0.6323000000000001
+    },
+    "('LIMIT_BAL', 'EDUCATION')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7445333333333334,
+      "omega_row": 0.6277333333333333
+    },
+    "('LIMIT_BAL', 'MARRIAGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7407999999999999,
+      "omega_row": 0.6296
+    },
+    "('LIMIT_BAL', 'AGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 1.1538834186204667,
+      "omega_row": 0.42305829068976664
+    },
+    "('LIMIT_BAL', 'PAY_0')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7613333333333333,
+      "omega_row": 0.6193333333333333
+    },
+    "('LIMIT_BAL', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7605999999999999,
+      "omega_row": 0.6197
+    },
+    "('LIMIT_BAL', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7594000000000001,
+      "omega_row": 0.6203
+    },
+    "('LIMIT_BAL', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7578,
+      "omega_row": 0.6211
+    },
+    "('LIMIT_BAL', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7604,
+      "omega_row": 0.6198
+    },
+    "('LIMIT_BAL', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7549333333333333,
+      "omega_row": 0.6225333333333334
+    },
+    "('LIMIT_BAL', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.6797333333333333,
+      "omega_row": 0.6601333333333333
+    },
+    "('SEX', 'EDUCATION')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.04520000000000006,
+      "omega_row": 0.9773999999999999
+    },
+    "('SEX', 'MARRIAGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.038466666666666705,
+      "omega_row": 0.9807666666666667
+    },
+    "('SEX', 'AGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7682666666666667,
+      "omega_row": 0.6158666666666667
+    },
+    "('SEX', 'PAY_0')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.04973333333333336,
+      "omega_row": 0.9751333333333333
+    },
+    "('SEX', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.0436,
+      "omega_row": 0.9782
+    },
+    "('SEX', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.03740000000000002,
+      "omega_row": 0.9813
+    },
+    "('SEX', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.057466666666666694,
+      "omega_row": 0.9712666666666666
+    },
+    "('SEX', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.0534666666666667,
+      "omega_row": 0.9732666666666666
+    },
+    "('SEX', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.05520000000000002,
+      "omega_row": 0.9724
+    },
+    "('SEX', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.00813333333333334,
+      "omega_row": 0.9959333333333333
+    },
+    "('EDUCATION', 'MARRIAGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06026666666666664,
+      "omega_row": 0.9698666666666667
+    },
+    "('EDUCATION', 'AGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7910666666666666,
+      "omega_row": 0.6044666666666667
+    },
+    "('EDUCATION', 'PAY_0')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.08726666666666666,
+      "omega_row": 0.9563666666666667
+    },
+    "('EDUCATION', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.07493333333333335,
+      "omega_row": 0.9625333333333334
+    },
+    "('EDUCATION', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.07366666666666669,
+      "omega_row": 0.9631666666666666
+    },
+    "('EDUCATION', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.09113333333333326,
+      "omega_row": 0.9544333333333334
+    },
+    "('EDUCATION', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.08826666666666669,
+      "omega_row": 0.9558666666666666
+    },
+    "('EDUCATION', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.08293333333333336,
+      "omega_row": 0.9585333333333333
+    },
+    "('EDUCATION', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.0406666666666667,
+      "omega_row": 0.9796666666666667
+    },
+    "('MARRIAGE', 'AGE')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8089333333333333,
+      "omega_row": 0.5955333333333334
+    },
+    "('MARRIAGE', 'PAY_0')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06786666666666673,
+      "omega_row": 0.9660666666666666
+    },
+    "('MARRIAGE', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06726666666666667,
+      "omega_row": 0.9663666666666667
+    },
+    "('MARRIAGE', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06166666666666659,
+      "omega_row": 0.9691666666666667
+    },
+    "('MARRIAGE', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06700000000000002,
+      "omega_row": 0.9665
+    },
+    "('MARRIAGE', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06613333333333334,
+      "omega_row": 0.9669333333333333
+    },
+    "('MARRIAGE', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06626666666666664,
+      "omega_row": 0.9668666666666667
+    },
+    "('MARRIAGE', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.028800000000000003,
+      "omega_row": 0.9856
+    },
+    "('AGE', 'PAY_0')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8603333333333334,
+      "omega_row": 0.5698333333333333
+    },
+    "('AGE', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8536666666666667,
+      "omega_row": 0.5731666666666666
+    },
+    "('AGE', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8521333333333332,
+      "omega_row": 0.5739333333333334
+    },
+    "('AGE', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8602666666666667,
+      "omega_row": 0.5698666666666666
+    },
+    "('AGE', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8588666666666667,
+      "omega_row": 0.5705666666666667
+    },
+    "('AGE', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.8516666666666666,
+      "omega_row": 0.5741666666666667
+    },
+    "('AGE', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.7643999999999999,
+      "omega_row": 0.6178000000000001
+    },
+    "('PAY_0', 'PAY_2')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.19633783252990533,
+      "omega_row": 0.9018310837350474
+    },
+    "('PAY_0', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.2002666666666667,
+      "omega_row": 0.8998666666666666
+    },
+    "('PAY_0', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1692,
+      "omega_row": 0.9154
+    },
+    "('PAY_0', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.15433333333333332,
+      "omega_row": 0.9228333333333334
+    },
+    "('PAY_0', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.14900000000000002,
+      "omega_row": 0.9255
+    },
+    "('PAY_0', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.057600000000000054,
+      "omega_row": 0.9712
+    },
+    "('PAY_2', 'PAY_3')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.13033333333333336,
+      "omega_row": 0.9348333333333333
+    },
+    "('PAY_2', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1456,
+      "omega_row": 0.9272
+    },
+    "('PAY_2', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1366,
+      "omega_row": 0.9317
+    },
+    "('PAY_2', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1216,
+      "omega_row": 0.9392
+    },
+    "('PAY_2', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.042533333333333354,
+      "omega_row": 0.9787333333333333
+    },
+    "('PAY_3', 'PAY_4')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.164676584389593,
+      "omega_row": 0.9176617078052035
+    },
+    "('PAY_3', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.15406666666666666,
+      "omega_row": 0.9229666666666667
+    },
+    "('PAY_3', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.12253333333333333,
+      "omega_row": 0.9387333333333333
+    },
+    "('PAY_3', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.03826666666666664,
+      "omega_row": 0.9808666666666667
+    },
+    "('PAY_4', 'PAY_5')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.14134502728588932,
+      "omega_row": 0.9293274863570553
+    },
+    "('PAY_4', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.17859999999999998,
+      "omega_row": 0.9107000000000001
+    },
+    "('PAY_4', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.06366666666666668,
+      "omega_row": 0.9681666666666666
+    },
+    "('PAY_5', 'PAY_6')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.19715789707680337,
+      "omega_row": 0.9014210514615983
+    },
+    "('PAY_5', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.05806666666666661,
+      "omega_row": 0.9709666666666666
+    },
+    "('PAY_6', 'default')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.05833333333333333,
+      "omega_row": 0.9708333333333333
+    }
+  }
+}

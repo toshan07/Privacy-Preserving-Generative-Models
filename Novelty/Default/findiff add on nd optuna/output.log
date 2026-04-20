@@ -1,0 +1,108 @@
+nohup: ignoring input
+Device: cuda
+
+Loading Credit Default dataset …
+Shape: (30000, 24)
+
+Train=18000  Val=6000  Test=6000
+============================================================
+Optuna HPO  — 50 trials, TPE sampler + Hyperband/ASHA pruner
+DP-SGD: ON
+============================================================
+  0%|          | 0/50 [00:00<?, ?it/s]Best trial: 0. Best value: 0.891597:   0%|          | 0/50 [19:06<?, ?it/s]Best trial: 0. Best value: 0.891597:   2%|▏         | 1/50 [19:06<15:35:54, 1146.01s/it]Best trial: 0. Best value: 0.891597:   2%|▏         | 1/50 [28:11<15:35:54, 1146.01s/it]Best trial: 0. Best value: 0.891597:   4%|▍         | 2/50 [28:11<10:34:25, 793.04s/it] Best trial: 0. Best value: 0.891597:   4%|▍         | 2/50 [32:36<10:34:25, 793.04s/it]Best trial: 0. Best value: 0.891597:   6%|▌         | 3/50 [32:36<7:12:07, 551.65s/it] Best trial: 0. Best value: 0.891597:   6%|▌         | 3/50 [34:59<7:12:07, 551.65s/it]Best trial: 0. Best value: 0.891597:   8%|▊         | 4/50 [34:59<4:59:08, 390.20s/it]Best trial: 0. Best value: 0.891597:   8%|▊         | 4/50 [40:59<4:59:08, 390.20s/it]Best trial: 0. Best value: 0.891597:  10%|█         | 5/50 [40:59<4:44:33, 379.40s/it]Best trial: 0. Best value: 0.891597:  10%|█         | 5/50 [42:36<4:44:33, 379.40s/it]Best trial: 0. Best value: 0.891597:  12%|█▏        | 6/50 [42:36<3:27:50, 283.43s/it]Best trial: 0. Best value: 0.891597:  12%|█▏        | 6/50 [45:59<3:27:50, 283.43s/it]Best trial: 0. Best value: 0.891597:  14%|█▍        | 7/50 [45:59<3:04:17, 257.16s/it]Best trial: 0. Best value: 0.891597:  14%|█▍        | 7/50 [48:28<3:04:17, 257.16s/it]Best trial: 0. Best value: 0.891597:  16%|█▌        | 8/50 [48:28<2:35:50, 222.63s/it]Best trial: 0. Best value: 0.891597:  16%|█▌        | 8/50 [1:19:18<2:35:50, 222.63s/it]Best trial: 0. Best value: 0.891597:  18%|█▊        | 9/50 [1:19:18<8:19:46, 731.38s/it]Best trial: 0. Best value: 0.891597:  18%|█▊        | 9/50 [1:26:39<8:19:46, 731.38s/it]Best trial: 0. Best value: 0.891597:  20%|██        | 10/50 [1:26:39<7:07:55, 641.90s/it]Best trial: 0. Best value: 0.891597:  20%|██        | 10/50 [1:35:38<7:07:55, 641.90s/it]Best trial: 0. Best value: 0.891597:  22%|██▏       | 11/50 [1:35:38<6:36:41, 610.30s/it]Best trial: 0. Best value: 0.891597:  22%|██▏       | 11/50 [1:46:16<6:36:41, 610.30s/it]Best trial: 0. Best value: 0.891597:  24%|██▍       | 12/50 [1:46:16<6:31:55, 618.82s/it]Best trial: 0. Best value: 0.891597:  24%|██▍       | 12/50 [1:51:37<6:31:55, 618.82s/it]Best trial: 0. Best value: 0.891597:  26%|██▌       | 13/50 [1:51:37<5:25:56, 528.57s/it]Best trial: 0. Best value: 0.891597:  26%|██▌       | 13/50 [1:53:06<5:25:56, 528.57s/it]Best trial: 0. Best value: 0.891597:  28%|██▊       | 14/50 [1:53:06<3:57:29, 395.82s/it]Best trial: 0. Best value: 0.891597:  28%|██▊       | 14/50 [1:56:04<3:57:29, 395.82s/it]Best trial: 0. Best value: 0.891597:  30%|███       | 15/50 [1:56:04<3:12:31, 330.03s/it]Best trial: 0. Best value: 0.891597:  30%|███       | 15/50 [1:58:12<3:12:31, 330.03s/it]Best trial: 0. Best value: 0.891597:  32%|███▏      | 16/50 [1:58:12<2:32:33, 269.23s/it]Best trial: 16. Best value: 0.916722:  32%|███▏      | 16/50 [2:23:29<2:32:33, 269.23s/it]Best trial: 16. Best value: 0.916722:  34%|███▍      | 17/50 [2:23:29<5:54:32, 644.62s/it]Best trial: 16. Best value: 0.916722:  34%|███▍      | 17/50 [2:27:41<5:54:32, 644.62s/it]Best trial: 16. Best value: 0.916722:  36%|███▌      | 18/50 [2:27:41<4:40:52, 526.65s/it]Best trial: 16. Best value: 0.916722:  36%|███▌      | 18/50 [2:47:25<4:40:52, 526.65s/it]Best trial: 16. Best value: 0.916722:  38%|███▊      | 19/50 [2:47:25<6:14:02, 723.94s/it]Best trial: 16. Best value: 0.916722:  38%|███▊      | 19/50 [2:51:45<6:14:02, 723.94s/it]Best trial: 16. Best value: 0.916722:  40%|████      | 20/50 [2:51:45<4:52:22, 584.75s/it]Best trial: 16. Best value: 0.916722:  40%|████      | 20/50 [2:54:27<4:52:22, 584.75s/it]Best trial: 16. Best value: 0.916722:  42%|████▏     | 21/50 [2:54:27<3:41:13, 457.71s/it]Best trial: 16. Best value: 0.916722:  42%|████▏     | 21/50 [3:00:47<3:41:13, 457.71s/it]Best trial: 16. Best value: 0.916722:  44%|████▍     | 22/50 [3:00:47<3:22:45, 434.48s/it]Best trial: 16. Best value: 0.916722:  44%|████▍     | 22/50 [3:10:17<3:22:45, 434.48s/it]Best trial: 16. Best value: 0.916722:  46%|████▌     | 23/50 [3:10:17<3:33:51, 475.24s/it]Best trial: 16. Best value: 0.916722:  46%|████▌     | 23/50 [3:15:06<3:33:51, 475.24s/it]Best trial: 16. Best value: 0.916722:  48%|████▊     | 24/50 [3:15:06<3:01:40, 419.26s/it]Best trial: 16. Best value: 0.916722:  48%|████▊     | 24/50 [3:20:20<3:01:40, 419.26s/it]Best trial: 16. Best value: 0.916722:  50%|█████     | 25/50 [3:20:20<2:41:27, 387.49s/it]Best trial: 16. Best value: 0.916722:  50%|█████     | 25/50 [3:23:34<2:41:27, 387.49s/it]Best trial: 16. Best value: 0.916722:  52%|█████▏    | 26/50 [3:23:34<2:11:52, 329.68s/it]Best trial: 16. Best value: 0.916722:  52%|█████▏    | 26/50 [3:24:37<2:11:52, 329.68s/it]Best trial: 16. Best value: 0.916722:  54%|█████▍    | 27/50 [3:24:37<1:35:36, 249.42s/it]Best trial: 27. Best value: 0.932063:  54%|█████▍    | 27/50 [3:39:37<1:35:36, 249.42s/it]Best trial: 27. Best value: 0.932063:  56%|█████▌    | 28/50 [3:39:37<2:43:05, 444.81s/it]Best trial: 27. Best value: 0.932063:  56%|█████▌    | 28/50 [3:41:47<2:43:05, 444.81s/it]Best trial: 27. Best value: 0.932063:  58%|█████▊    | 29/50 [3:41:47<2:02:33, 350.16s/it]Best trial: 27. Best value: 0.932063:  58%|█████▊    | 29/50 [3:49:37<2:02:33, 350.16s/it]Best trial: 27. Best value: 0.932063:  60%|██████    | 30/50 [3:49:37<2:08:45, 386.27s/it]Best trial: 27. Best value: 0.932063:  60%|██████    | 30/50 [3:51:03<2:08:45, 386.27s/it]Best trial: 27. Best value: 0.932063:  62%|██████▏   | 31/50 [3:51:03<1:33:44, 296.04s/it]Best trial: 27. Best value: 0.932063:  62%|██████▏   | 31/50 [4:03:19<1:33:44, 296.04s/it]Best trial: 27. Best value: 0.932063:  64%|██████▍   | 32/50 [4:03:19<2:08:29, 428.28s/it]Best trial: 27. Best value: 0.932063:  64%|██████▍   | 32/50 [4:14:13<2:08:29, 428.28s/it]Best trial: 27. Best value: 0.932063:  66%|██████▌   | 33/50 [4:14:13<2:20:30, 495.90s/it]Best trial: 27. Best value: 0.932063:  66%|██████▌   | 33/50 [4:22:34<2:20:30, 495.90s/it]Best trial: 27. Best value: 0.932063:  68%|██████▊   | 34/50 [4:22:34<2:12:36, 497.28s/it]Best trial: 27. Best value: 0.932063:  68%|██████▊   | 34/50 [4:24:06<2:12:36, 497.28s/it]Best trial: 27. Best value: 0.932063:  70%|███████   | 35/50 [4:24:06<1:33:57, 375.80s/it]Best trial: 27. Best value: 0.932063:  70%|███████   | 35/50 [4:27:32<1:33:57, 375.80s/it]Best trial: 27. Best value: 0.932063:  72%|███████▏  | 36/50 [4:27:32<1:15:48, 324.92s/it]Best trial: 27. Best value: 0.932063:  72%|███████▏  | 36/50 [4:30:45<1:15:48, 324.92s/it]Best trial: 27. Best value: 0.932063:  74%|███████▍  | 37/50 [4:30:45<1:01:48, 285.28s/it]Best trial: 27. Best value: 0.932063:  74%|███████▍  | 37/50 [4:53:39<1:01:48, 285.28s/it]Best trial: 27. Best value: 0.932063:  76%|███████▌  | 38/50 [4:53:39<2:02:22, 611.85s/it]Best trial: 27. Best value: 0.932063:  76%|███████▌  | 38/50 [4:55:31<2:02:22, 611.85s/it]Best trial: 27. Best value: 0.932063:  78%|███████▊  | 39/50 [4:55:31<1:24:43, 462.11s/it]Best trial: 27. Best value: 0.932063:  78%|███████▊  | 39/50 [4:57:12<1:24:43, 462.11s/it]Best trial: 27. Best value: 0.932063:  80%|████████  | 40/50 [4:57:12<58:55, 353.53s/it]  Best trial: 27. Best value: 0.932063:  80%|████████  | 40/50 [5:00:51<58:55, 353.53s/it]Best trial: 27. Best value: 0.932063:  82%|████████▏ | 41/50 [5:00:51<47:00, 313.34s/it]Best trial: 27. Best value: 0.932063:  82%|████████▏ | 41/50 [5:03:43<47:00, 313.34s/it]Best trial: 27. Best value: 0.932063:  84%|████████▍ | 42/50 [5:03:43<36:07, 270.96s/it]Best trial: 27. Best value: 0.932063:  84%|████████▍ | 42/50 [5:05:23<36:07, 270.96s/it]Best trial: 27. Best value: 0.932063:  86%|████████▌ | 43/50 [5:05:23<25:38, 219.73s/it]Best trial: 27. Best value: 0.932063:  86%|████████▌ | 43/50 [5:08:51<25:38, 219.73s/it]Best trial: 27. Best value: 0.932063:  88%|████████▊ | 44/50 [5:08:51<21:36, 216.16s/it]Best trial: 27. Best value: 0.932063:  88%|████████▊ | 44/50 [5:42:57<21:36, 216.16s/it]Best trial: 27. Best value: 0.932063:  90%|█████████ | 45/50 [5:42:57<1:03:45, 765.00s/it]Best trial: 27. Best value: 0.932063:  90%|█████████ | 45/50 [5:45:38<1:03:45, 765.00s/it]Best trial: 27. Best value: 0.932063:  92%|█████████▏| 46/50 [5:45:38<38:54, 583.70s/it]  Best trial: 27. Best value: 0.932063:  92%|█████████▏| 46/50 [5:47:22<38:54, 583.70s/it]Best trial: 27. Best value: 0.932063:  94%|█████████▍| 47/50 [5:47:22<21:59, 439.89s/it]Best trial: 27. Best value: 0.932063:  94%|█████████▍| 47/50 [5:50:08<21:59, 439.89s/it]Best trial: 27. Best value: 0.932063:  96%|█████████▌| 48/50 [5:50:08<11:55, 357.88s/it]Best trial: 27. Best value: 0.932063:  96%|█████████▌| 48/50 [5:51:41<11:55, 357.88s/it]Best trial: 27. Best value: 0.932063:  98%|█████████▊| 49/50 [5:51:41<04:38, 278.38s/it]Best trial: 27. Best value: 0.932063:  98%|█████████▊| 49/50 [5:56:00<04:38, 278.38s/it]Best trial: 27. Best value: 0.932063: 100%|██████████| 50/50 [5:56:00<00:00, 272.56s/it]Best trial: 27. Best value: 0.932063: 100%|██████████| 50/50 [5:56:00<00:00, 427.22s/it]
+
+HPO finished in 356.0 min
+Best trial  : #27
+Best Ω_col  : 0.9321
+Best params :
+  d_model                   = 64
+  n_heads                   = 8
+  n_layers                  = 3
+  time_emb_dim              = 256
+  dropout                   = 0.0
+  emb_base                  = 2
+  emb_max                   = 8
+  diffusion_steps           = 1000
+  beta_start                = 9.233564846965355e-05
+  beta_end                  = 0.017661384342906893
+  lr                        = 0.0022555836129907808
+  batch_size                = 1024
+  epochs                    = 450
+  dp_noise_mult             = 0.9511584753650953
+  dp_max_grad_norm          = 0.5255086309282133
+HPO plots saved to Results1/
+
+============================================================
+Retraining final model  (epochs=450)  with best HP …
+============================================================
+  epoch 50/450  loss=0.05368  val_fidelity=0.0000
+  epoch 100/450  loss=0.04465  val_fidelity=0.0000
+  epoch 150/450  loss=0.04302  val_fidelity=0.0000
+  epoch 200/450  loss=0.04131  val_fidelity=0.0000
+  epoch 250/450  loss=0.03935  val_fidelity=0.0000
+  epoch 300/450  loss=0.03886  val_fidelity=0.0000
+  epoch 350/450  loss=0.03761  val_fidelity=0.0000
+  epoch 400/450  loss=0.03776  val_fidelity=0.0000
+  epoch 450/450  loss=0.03779  val_fidelity=0.0000
+
+Generating 30000 synthetic samples …
+
+Synthetic data preview:
+  SEX EDUCATION MARRIAGE  ...     PAY_AMT4     PAY_AMT5     PAY_AMT6
+0   1         0        1  ...   822.961426  1000.000000  2000.000000
+1   2         0        1  ...   689.107056  8481.349609   631.095520
+2   2         2        2  ...  6230.658203  1200.000000  1121.743286
+3   1         0        1  ...  5430.396973     0.000000  4000.000000
+4   2         2        2  ...     0.000000  1200.000000   400.551849
+
+[5 rows x 24 columns]
+
+Test Ω_col fidelity = 0.9335
+
+── Per-column fidelity ──
+  NUM  LIMIT_BAL             0.9789
+  NUM  AGE                   0.9855
+  NUM  BILL_AMT1             0.9805
+  NUM  BILL_AMT2             0.9713
+  NUM  BILL_AMT3             0.9712
+  NUM  BILL_AMT4             0.9761
+  NUM  BILL_AMT5             0.9739
+  NUM  BILL_AMT6             0.9657
+  NUM  PAY_AMT1              0.9783
+  NUM  PAY_AMT2              0.9734
+  NUM  PAY_AMT3              0.9820
+  NUM  PAY_AMT4              0.9757
+  NUM  PAY_AMT5              0.9762
+  NUM  PAY_AMT6              0.9773
+  CAT  SEX                   0.9942
+  CAT  EDUCATION             0.5886
+  CAT  MARRIAGE              0.9807
+  CAT  PAY_0                 0.7475
+  CAT  PAY_2                 0.8906
+  CAT  PAY_3                 0.9253
+  CAT  PAY_4                 0.8746
+  CAT  PAY_5                 0.8970
+  CAT  PAY_6                 0.8767
+  CAT  default               0.9638
+
+[DP] Final ε ≈ 25.10  at δ=1e-05
+
+Saved:
+  Results1/synthetic_v3_best.csv
+  Results1/best_hyperparams_v3.csv
+  Results1/hpo_history.png
+  Results1/hpo_param_importance.png
+  Results1/hpo_parallel.png
+
+╔══════════════════════════════════════════════════════════════╗
+║         Enhanced FinDiff v3 — HPO Summary                    ║
+╠══════════════════════════════════════════════════════════════╣
+║  Optimiser  : Optuna TPE  (multivariate + grouped)           ║
+║  Pruner     : Hyperband / ASHA                               ║
+║               — prunes unpromising trials early              ║
+║               — concentrates budget on good configs          ║
+║  Objective  : Ω_col fidelity on validation split             ║
+║  Params     : 15 hyperparameters searched jointly            ║
+║               (incl. epochs, d_model, lr, dp_noise, …)       ║
+╚══════════════════════════════════════════════════════════════╝
+

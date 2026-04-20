@@ -1,0 +1,68 @@
+"""
+python run_ctab_gan.py --csv Real_Datasets/clean_data.csv --metadata Real_Datasets/metadata_creditcard.json --outdir outputs --epochs 300
+"""
+
+import os
+import json
+import argparse
+import pandas as pd
+from model.synthesizer.ctabgan_synthesizer import CTABGANSynthesizer as SynthClass
+
+def load_metadata(path):
+    with open(path, "r") as f:
+        return json.load(f)
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--csv", required=True,default="Real_Datasets/clean_data.csv")
+    p.add_argument("--metadata", required=True,default="Real_Datasets/metadata_creditcard.json")
+    p.add_argument("--outdir", default="outputs")
+    p.add_argument("--epochs", type=int, default=300)
+    p.add_argument("--dp", action="store_true", help="Enable differential privacy (if supported)")
+    args = p.parse_args()
+
+    os.makedirs(args.outdir, exist_ok=True)
+
+    df = pd.read_csv(args.csv)
+    metadata = load_metadata(args.metadata)
+
+    print("Loaded CSV:", args.csv, "shape:", df.shape)
+    print("Loaded metadata:", args.metadata)
+
+    synth_kwargs = {
+        "verbose": True,
+        "epochs": args.epochs,
+        # Add any repo-specific args here (e.g., batch_size, latent_dim, dp params)
+    }
+    if args.dp:
+        print("DP requested: make sure the repo's synthesizer supports DP and pass DP args here.")
+        # synth_kwargs.update({"dp": True, "dp_epsilon": 1.0, ...})
+
+    print("Creating synthesizer with kwargs:", synth_kwargs)
+    synth = SynthClass(**synth_kwargs)
+
+    # Fit on the dataframe. Many repo interfaces expect (data, metadata) or (data, data_info).
+    # Check the notebook Experiment_Script_Adult.ipynb in the repo for the exact call sequence.
+    try:
+        # Most likely call signature:
+        print("Calling fit(df, metadata) ...")
+        synth.fit(df, metadata)
+    except TypeError:
+        # try alternative signature:
+        print("fit(df) failed, trying fit(df.values) ...")
+        synth.fit(df)
+
+    # Sample synthetic data
+    try:
+        syn = synth.sample(len(df))
+    except Exception:
+        # Some synth classes use sample(n_samples=...)
+        syn = synth.sample(n_samples=len(df))
+
+    syn_out = os.path.join(args.outdir, "synthetic_creditcard.csv")
+    syn.to_csv(syn_out, index=False)
+    print("Saved synthetic data to", syn_out)
+
+if __name__ == "__main__":
+    main()

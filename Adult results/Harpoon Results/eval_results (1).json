@@ -1,0 +1,364 @@
+{
+  "summary": {
+    "Omega_col": 0.7942415077392359,
+    "Omega_row": 0.8955446362365183,
+    "privacy_median_DCR": 0.5081311702630563,
+    "synthesis_fraction": 0.0,
+    "utility_mean_accuracy": 0.7821359073017559,
+    "utility_per_classifier": {
+      "RandomForest": 0.7811684578302596,
+      "DecisionTree": 0.7257087258414047,
+      "LogisticRegression": 0.824819777984167,
+      "AdaBoost": 0.7968466675511919
+    }
+  },
+  "per_column": {
+    "age": {
+      "type": "numeric",
+      "ks": 0.04964316627958859,
+      "omega_col": 0.9503568337204114
+    },
+    "fnlwgt": {
+      "type": "numeric",
+      "ks": 0.05349342396398932,
+      "omega_col": 0.9465065760360107
+    },
+    "educational-num": {
+      "type": "numeric",
+      "ks": 0.23779995360168127,
+      "omega_col": 0.7622000463983187
+    },
+    "capital-gain": {
+      "type": "numeric",
+      "ks": 0.6767323895309747,
+      "omega_col": 0.3232676104690253
+    },
+    "capital-loss": {
+      "type": "numeric",
+      "ks": 0.8954992400298915,
+      "omega_col": 0.10450075997010855
+    },
+    "hours-per-week": {
+      "type": "numeric",
+      "ks": 0.43542119117214595,
+      "omega_col": 0.564578808827854
+    },
+    "workclass": {
+      "type": "categorical",
+      "tvd": 0.2128618220801607,
+      "omega_col": 0.8935690889599197
+    },
+    "education": {
+      "type": "categorical",
+      "tvd": 0.30935687532961287,
+      "omega_col": 0.8453215623351935
+    },
+    "marital-status": {
+      "type": "categorical",
+      "tvd": 0.10904334497224072,
+      "omega_col": 0.9454783275138796
+    },
+    "occupation": {
+      "type": "categorical",
+      "tvd": 0.387149045671672,
+      "omega_col": 0.806425477164164
+    },
+    "relationship": {
+      "type": "categorical",
+      "tvd": 0.12580396712080566,
+      "omega_col": 0.9370980164395972
+    },
+    "race": {
+      "type": "categorical",
+      "tvd": 0.10973980519219013,
+      "omega_col": 0.945130097403905
+    },
+    "gender": {
+      "type": "categorical",
+      "tvd": 0.09960672125584957,
+      "omega_col": 0.9501966393720752
+    },
+    "native-country": {
+      "type": "categorical",
+      "tvd": 0.1086786396997866,
+      "omega_col": 0.9456606801501067
+    },
+    "income": {
+      "type": "categorical",
+      "tvd": 0.013335817344063888,
+      "omega_col": 0.9933320913279681
+    }
+  },
+  "per_pair": {
+    "('age', 'fnlwgt')": {
+      "type": "num-num",
+      "rho_real": -0.07579196928949568,
+      "rho_synth": -0.03452991988860944,
+      "omega_row": 0.9793689752995569
+    },
+    "('age', 'educational-num')": {
+      "type": "num-num",
+      "rho_real": 0.03762295179960298,
+      "rho_synth": 0.06920753528078712,
+      "omega_row": 0.984207708259408
+    },
+    "('age', 'capital-gain')": {
+      "type": "num-num",
+      "rho_real": 0.07968324079473445,
+      "rho_synth": 0.12614225672393986,
+      "omega_row": 0.9767704920353973
+    },
+    "('age', 'capital-loss')": {
+      "type": "num-num",
+      "rho_real": 0.05935057814802315,
+      "rho_synth": 0.04384955535597564,
+      "omega_row": 0.9922494886039762
+    },
+    "('age', 'hours-per-week')": {
+      "type": "num-num",
+      "rho_real": 0.10199224478154828,
+      "rho_synth": 0.07402821673396767,
+      "omega_row": 0.9860179859762097
+    },
+    "('fnlwgt', 'educational-num')": {
+      "type": "num-num",
+      "rho_real": -0.041993020977693404,
+      "rho_synth": -0.052086819341255426,
+      "omega_row": 0.994953100818219
+    },
+    "('fnlwgt', 'capital-gain')": {
+      "type": "num-num",
+      "rho_real": -0.004110483090460668,
+      "rho_synth": -0.018390040667154144,
+      "omega_row": 0.9928602212116533
+    },
+    "('fnlwgt', 'capital-loss')": {
+      "type": "num-num",
+      "rho_real": -0.0043487751148169745,
+      "rho_synth": -0.029864369034962056,
+      "omega_row": 0.9872422030399275
+    },
+    "('fnlwgt', 'hours-per-week')": {
+      "type": "num-num",
+      "rho_real": -0.018678732137760154,
+      "rho_synth": -0.011750472318780451,
+      "omega_row": 0.9965358700905101
+    },
+    "('educational-num', 'capital-gain')": {
+      "type": "num-num",
+      "rho_real": 0.1269068024892882,
+      "rho_synth": 0.10569012946011257,
+      "omega_row": 0.9893916634854122
+    },
+    "('educational-num', 'capital-loss')": {
+      "type": "num-num",
+      "rho_real": 0.08171131466476314,
+      "rho_synth": 0.03705478891689995,
+      "omega_row": 0.9776717371260684
+    },
+    "('educational-num', 'hours-per-week')": {
+      "type": "num-num",
+      "rho_real": 0.14620623766526084,
+      "rho_synth": 0.11735508417939948,
+      "omega_row": 0.9855744232570693
+    },
+    "('capital-gain', 'capital-loss')": {
+      "type": "num-num",
+      "rho_real": -0.03210232758971966,
+      "rho_synth": -0.018998849829645455,
+      "omega_row": 0.9934482611199629
+    },
+    "('capital-gain', 'hours-per-week')": {
+      "type": "num-num",
+      "rho_real": 0.08388041843492117,
+      "rho_synth": 0.060599573450988105,
+      "omega_row": 0.9883595775080335
+    },
+    "('capital-loss', 'hours-per-week')": {
+      "type": "num-num",
+      "rho_real": 0.05419486604453852,
+      "rho_synth": 0.031712124055896795,
+      "omega_row": 0.9887586290056791
+    },
+    "('workclass', 'education')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.40722262239757995,
+      "omega_row": 0.79638868880121
+    },
+    "('workclass', 'marital-status')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.2804220476760331,
+      "omega_row": 0.8597889761619835
+    },
+    "('workclass', 'occupation')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.4451922061313951,
+      "omega_row": 0.7774038969343025
+    },
+    "('workclass', 'relationship')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.2895668826412718,
+      "omega_row": 0.8552165586793641
+    },
+    "('workclass', 'race')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.27790632686893685,
+      "omega_row": 0.8610468365655316
+    },
+    "('workclass', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.24117401334830044,
+      "omega_row": 0.8794129933258498
+    },
+    "('workclass', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.29727243776484913,
+      "omega_row": 0.8513637811175754
+    },
+    "('workclass', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.21286182208016072,
+      "omega_row": 0.8935690889599196
+    },
+    "('education', 'marital-status')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.37255417596960716,
+      "omega_row": 0.8137229120151964
+    },
+    "('education', 'occupation')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.5999193581162892,
+      "omega_row": 0.7000403209418554
+    },
+    "('education', 'relationship')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.36290216121259405,
+      "omega_row": 0.818548919393703
+    },
+    "('education', 'race')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.3537109448578754,
+      "omega_row": 0.8231445275710623
+    },
+    "('education', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.3192882752797942,
+      "omega_row": 0.8403558623601028
+    },
+    "('education', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.37705060233003707,
+      "omega_row": 0.8114746988349815
+    },
+    "('education', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.3214576261094278,
+      "omega_row": 0.8392711869452861
+    },
+    "('marital-status', 'occupation')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.4565643209866356,
+      "omega_row": 0.7717178395066822
+    },
+    "('marital-status', 'relationship')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.19746967571197674,
+      "omega_row": 0.9012651621440116
+    },
+    "('marital-status', 'race')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.17884803360200754,
+      "omega_row": 0.9105759831989962
+    },
+    "('marital-status', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1472226913002951,
+      "omega_row": 0.9263886543498524
+    },
+    "('marital-status', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.195743073932035,
+      "omega_row": 0.9021284630339825
+    },
+    "('marital-status', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1848131673111105,
+      "omega_row": 0.9075934163444448
+    },
+    "('occupation', 'relationship')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.44208873226694007,
+      "omega_row": 0.77895563386653
+    },
+    "('occupation', 'race')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.4238940686441888,
+      "omega_row": 0.7880529656779056
+    },
+    "('occupation', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.4597655012530769,
+      "omega_row": 0.7701172493734616
+    },
+    "('occupation', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.43978744267613623,
+      "omega_row": 0.7801062786619319
+    },
+    "('occupation', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.4115676554507449,
+      "omega_row": 0.7942161722746275
+    },
+    "('relationship', 'race')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1867693673265536,
+      "omega_row": 0.9066153163367232
+    },
+    "('relationship', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.14499690023610118,
+      "omega_row": 0.9275015498819494
+    },
+    "('relationship', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.2068360604562091,
+      "omega_row": 0.8965819697718954
+    },
+    "('relationship', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.17401216758228208,
+      "omega_row": 0.912993916208859
+    },
+    "('race', 'gender')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.15209294658371264,
+      "omega_row": 0.9239535267081437
+    },
+    "('race', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.18359259956611873,
+      "omega_row": 0.9082037002169406
+    },
+    "('race', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1097398051921902,
+      "omega_row": 0.9451300974039049
+    },
+    "('gender', 'native-country')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.17860337715280444,
+      "omega_row": 0.9106983114235978
+    },
+    "('gender', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.1359230328521811,
+      "omega_row": 0.9320384835739095
+    },
+    "('native-country', 'income')": {
+      "type": "cat-cat",
+      "tvd_joint": 0.11243565468185467,
+      "omega_row": 0.9437821726590727
+    }
+  }
+}

@@ -1,0 +1,13 @@
+,value
+cat_emb_dim,4
+diffusion_steps,1000
+beta_start,0.00031935874012486737
+beta_end,0.017222693026416946
+lr,0.000164360287125861
+batch_size,256
+epochs,650
+hidden_dims_key,1024x4
+val_fidelity_best,0.9764375
+test_fidelity,0.975475
+n_trials_total,60
+n_trials_pruned,49

@@ -1,0 +1,31 @@
+{
+  "dataset_name": "creditcard_default",
+  "target": "default",
+  "columns": [
+    {"name": "LIMIT_BAL", "type": "numerical"},
+    {"name": "SEX", "type": "categorical"},
+    {"name": "EDUCATION", "type": "categorical"},
+    {"name": "MARRIAGE", "type": "categorical"},
+    {"name": "AGE", "type": "numerical"},
+    {"name": "PAY_0", "type": "categorical"},
+    {"name": "PAY_2", "type": "categorical"},
+    {"name": "PAY_3", "type": "categorical"},
+    {"name": "PAY_4", "type": "categorical"},
+    {"name": "PAY_5", "type": "categorical"},
+    {"name": "PAY_6", "type": "categorical"},
+    {"name": "BILL_AMT1", "type": "numerical"},
+    {"name": "BILL_AMT2", "type": "numerical"},
+    {"name": "BILL_AMT3", "type": "numerical"},
+    {"name": "BILL_AMT4", "type": "numerical"},
+    {"name": "BILL_AMT5", "type": "numerical"},
+    {"name": "BILL_AMT6", "type": "numerical"},
+    {"name": "PAY_AMT1", "type": "numerical"},
+    {"name": "PAY_AMT2", "type": "numerical"},
+    {"name": "PAY_AMT3", "type": "numerical"},
+    {"name": "PAY_AMT4", "type": "numerical"},
+    {"name": "PAY_AMT5", "type": "numerical"},
+    {"name": "PAY_AMT6", "type": "numerical"},
+    {"name": "default", "type": "categorical"}
+  ],
+  "notes": "Categorical columns: SEX, EDUCATION, MARRIAGE, PAY_* (PAY_0..PAY_6). ID column removed."
+}
