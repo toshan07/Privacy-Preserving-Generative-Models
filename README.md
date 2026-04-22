@@ -10,7 +10,7 @@ We implemented and compared three major pipelines:
 2. FinDiff
 3. HARPOON
 
-We also unified evaluation across models using the metric framework from TabStruct and introduced two key novelties to improve utility, privacy, and structural fidelity.
+We also unified evaluation across models using the metric framework from TabStruct and introduced three key novelties to improve utility, privacy, and structural fidelity.
 
 ## Project Highlights
 
@@ -19,10 +19,15 @@ We also unified evaluation across models using the metric framework from TabStru
 	- FinDiff (diffusion-based tabular synthesis)
 	- HARPOON
 - Built a combined evaluation workflow by adapting TabStruct-style metrics and integrating them across all model outputs.
-- Added novelty in model design and training:
+
+- Added Novelty 1 in model design and training:
+	- FinDiff architecture extended with TabStruct global utility as a structural loss function.
+
+- Added Novelty 2 in architecture and privacy-aware training:
 	- Transformer-based cross-attention for conditioning input vectors.
 	- Adaptive embeddings with DP-SGD and ghost clipping.
-- Added novelty in optimization:
+
+- Added Novelty 3 in optimization:
 	- Hyperparameter tuning for FinDiff with Bayesian optimization.
 
 ## Repository Structure
@@ -41,6 +46,7 @@ Top-level folders in this workspace:
 	Generated outputs and experiment results grouped by dataset/model family.
 - `Novelty/`:
 	Experiment outputs for novel model and optimization contributions.
+	- Includes Default dataset runs such as `Novelty/Default/structural loss with findiff/`.
 - `Presentations/`, `Research Papers/`:
 	Supporting project material.
 
@@ -81,7 +87,17 @@ Relevant evaluation artifacts are available in:
 
 ## Novel Contributions
 
-### Novelty 1: Architecture + Privacy Enhancements
+### Novelty 1: Structural Loss on FinDiff Using TabStruct Global Utility
+
+We extended the FinDiff architecture by adding TabStruct global utility as a loss component (structural loss).
+
+Objective:
+
+- Improve structural fidelity of generated tabular data.
+- Preserve global feature relationships while maintaining generation quality.
+- Align generation behavior with evaluation-oriented utility signals from TabStruct.
+
+### Novelty 2: Architecture + Privacy Enhancements
 
 We introduced a transformer-style cross-attention mechanism to pass and condition on input vectors more effectively, then combined it with adaptive embeddings.
 
@@ -95,7 +111,7 @@ Objective:
 - Improve synthetic data quality under privacy constraints.
 - Better retain complex feature relationships without exposing sensitive records.
 
-### Novelty 2: FinDiff Hyperparameter Optimization
+### Novelty 3: FinDiff Hyperparameter Optimization
 
 We performed targeted hyperparameter tuning on FinDiff using Bayesian optimization.
 
